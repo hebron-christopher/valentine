@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+    <title>For My MALUMAAA ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #5c2c06, #a0522d);
+             color: white;
+
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        #message {
+            display: none;
+            font-weight: bold;
+            margin-top: 20px;
+            color: darkred;
+        }
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-10vh); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+    </style>
+</head>
+
+<body>
+<iframe width="300" height="170"
+src="https://www.youtube.com/embed/hC1rASeeVP0?si=gG101pPXERBpSoSr"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+    <h1>Happy Valentine's Day MALUUUUUU ❤️</h1>
+
+    <img src="https://i.imgur.com/Z7AzH2c.png">
+    <p>Press play before reading 💌</p>
+
+    <p>
+          
+    </p>
+
+    <p>
+        I LOVE YOUR SMILE, YOUR EYES THAT SHINE LIKE FULL MOON 🍫  
+        YOUR MISCHIEFS AND PALYFUL TALKS 🐱  
+        I LOVE NOW, ALWAYS AND FOREVER ❤️  
+    </p>
+
+    <button onclick="showLove()">Click This 💌</button>
+
+    <p id="message">
+MALUMAAA,
+
+ഇത്ര നല്ല ഒരു ദിവസത്തിൽ നിന്നെ വിഷമിപ്പിച്ചതിന് ക്ഷമിക്കണം.
+ ഈ ദിവസം നിന്റെ സന്തോഷത്തിനായിരിക്കേണ്ടതായിരുന്നു.
+ ഇന്ന് ഞാൻ നല്ലൊരു ബോയ്‌ഫ്രണ്ട് ആയി പെരുമാറാൻ കഴിഞ്ഞില്ലെന്ന് എനിക്ക് അറിയാം.
+
+പക്ഷേ നീ എന്റെ ജീവിതത്തിലെ സന്തോഷമാണ്. 
+ഞാൻ നിന്നെ ഹൃദയം നിറഞ്ഞ് സ്നേഹിക്കുന്നു. 
+എനിക്ക് എല്ലായ്പ്പോഴും നീയാണ് ആദ്യം.
+ ഞാൻ നിന്നെയാണ് തിരഞ്ഞെടുക്കിയത്.
+
+എന്റെ ജീവിതത്തിൽ ഉണ്ടായ ഏറ്റവും നല്ല കാര്യം നീയാണ്. 
+ഇത്ര നല്ലൊരു ഗേൾഫ്രണ്ട് ആയി എന്റെ കൂടെയുണ്ടാകുന്നതിനും എന്റെ ജീവിതത്തിലേക്ക് വന്നതിനും നന്ദി.
+         
+        YOUR LOVING, KUNDIMORAAN ❤️
+    </p>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+<div class="hearts" id="hearts"></div>
+
+<script>
+    function showLove() {
+        document.getElementById("message").style.display = "block";
+    }
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+        document.getElementById("hearts").appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+</script>
+
+
+</body>
+</html>
